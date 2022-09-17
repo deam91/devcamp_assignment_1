@@ -21,7 +21,7 @@ final whiteTopGradient = LinearGradient(
     1.0,
   ],
   colors: [
-    Colors.black.withOpacity(.4),
+    Colors.black.withOpacity(.55),
     Colors.black.withOpacity(0.0),
   ],
 );
