@@ -1,9 +1,12 @@
+import 'package:devcamp/widgets/card_title.dart';
 import 'package:flutter/material.dart';
 
-import '../core/constants.dart';
-
 class CardWidget extends StatelessWidget {
-  const CardWidget({super.key, required this.title, required this.image});
+  CardWidget({
+    super.key,
+    required this.title,
+    required this.image,
+  });
   final String title;
   final String image;
 
@@ -30,20 +33,8 @@ class CardWidget extends StatelessWidget {
               left: 0,
               right: 0,
               bottom: 0,
-              child: Container(
-                decoration: BoxDecoration(
-                  gradient: whiteTopGradient,
-                ),
-                child: Center(
-                  child: Text(
-                    title,
-                    style: const TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ),
+              child: CardTitleWidget(
+                title: title,
               ),
             ),
           ],
