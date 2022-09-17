@@ -34,6 +34,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         // elevation: 0,
+        backgroundColor: Colors.blueAccent,
         title: Text(title),
       ),
       body: SingleChildScrollView(
