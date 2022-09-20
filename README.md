@@ -1,6 +1,6 @@
 # devcamp
 
-A new Flutter project.
+Flutter DevCamp 2022 Assigment ;)
 
 ## Getting Started
 
