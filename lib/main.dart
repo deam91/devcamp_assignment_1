@@ -3,6 +3,8 @@ import 'package:devcamp/widgets/tag_list.dart';
 import 'package:devcamp/widgets/top_image.dart';
 import 'package:flutter/material.dart';
 
+import 'core/constants.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -15,9 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Travel App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: themeData,
       home: const HomePage(title: 'Travel App'),
     );
   }
@@ -32,8 +32,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        // elevation: 0,
-        backgroundColor: Colors.blueAccent,
         title: Text(title),
       ),
       body: SingleChildScrollView(
