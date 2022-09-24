@@ -1,3 +1,4 @@
+import 'package:devcamp/pages/card_details.dart';
 import 'package:flutter/material.dart';
 
 import '../data/sources.dart';
@@ -22,9 +23,18 @@ class GridListWidget extends StatelessWidget {
         ),
         itemCount: cardItems.length,
         itemBuilder: (context, index) {
-          return CardWidget(
-            title: cardItems[index].title,
-            image: cardItems[index].image,
+          return InkWell(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => CardDetails(card: cardItems[index]),
+                ),
+              );
+            },
+            child: CardWidget(
+              title: cardItems[index].title,
+              image: cardItems[index].image,
+            ),
           );
         },
       ),
