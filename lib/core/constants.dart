@@ -25,3 +25,11 @@ final whiteTopGradient = LinearGradient(
     Colors.black.withOpacity(0.0),
   ],
 );
+
+final themeData = ThemeData(
+  backgroundColor: Colors.blueAccent,
+  appBarTheme: const AppBarTheme(
+    backgroundColor: Colors.blueAccent,
+  ),
+  scaffoldBackgroundColor: Colors.white,
+);
